@@ -1,4 +1,4 @@
-const API_ENDPOINT = 'your_api_endpoint_here';
+const API_ENDPOINT = 'https://kodessphere-api.vercel.app/devices/aEb3tne';
 
 function toggleBulb() {
   const currentState = document.getElementById('bulbState').innerText;
@@ -6,7 +6,7 @@ function toggleBulb() {
 
   // Construct the request body
   const requestBody = {
-    teamid: 'your_team_id',
+    teamid: 'aEb3tne',
     device: 'bulb',
     value: newState === 'State: On' ? 1 : 0
   };
@@ -38,7 +38,7 @@ function chooseLEDColor() {
 
     // Construct the request body
     const requestBody = {
-      teamid: 'your_team_id',
+      teamid: 'aEb3tne',
       device: 'led',
       value: color
     };
@@ -68,7 +68,7 @@ function toggleACState() {
 
   // Construct the request body
   const requestBody = {
-    teamid: 'your_team_id',
+    teamid: 'aEb3tne',
     device: 'ac',
     value: newState === 'State: On' ? 1 : 0
   };
@@ -99,7 +99,7 @@ function decreaseTemperature() {
 
   // Construct the request body
   const requestBody = {
-    teamid: 'your_team_id',
+    teamid: 'aEb3tne',
     device: 'ac',
     value: {
       temp: newTemperature,
@@ -133,7 +133,7 @@ function increaseTemperature() {
 
   // Construct the request body
   const requestBody = {
-    teamid: 'your_team_id',
+    teamid: 'aEb3tne',
     device: 'ac',
     value: {
       temp: newTemperature,
