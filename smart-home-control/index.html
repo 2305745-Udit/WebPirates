@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home Control</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container" >
+    <div class="device" id="fanDevice">
+      <h2>Fan</h2>
+      <img src="fan.jpg" alt="Fan" width="300px" height="300px">
+      <input type="range" id="fanSpeed" min="0" max="5" value="0">
+    </div>
+    <div class="device" id="bulbDevice">
+      <h2>Bulb</h2>
+      <img src="bulb.jpg" alt="Bulb" width="300px" height="300px">
+      <button onclick="toggleBulb()">Turn On/Off</button>
+    </div>
+    <div class="device" id="ledDevice">
+      <h2>LED</h2>
+      <img src="led.jpg" alt="LED" width="300px" height="300px">
+      <button onclick="chooseLEDColor()">Choose Color</button>
+    </div>
+    <div class="device" id="acDevice">
+      <h2>Air Conditioner</h2>
+      <img src="ac.jpg" alt="Air Conditioner" width="300px" height="300px">
+      <button onclick="toggleACState()">Turn On/Off</button>
+      <div>
+        <button onclick="decreaseTemperature()">-</button>
+        <span id="acTemperature">Temperature: 25°C</span>
+        <button onclick="increaseTemperature()">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
