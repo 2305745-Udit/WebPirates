@@ -1,4 +1,4 @@
-const API_ENDPOINT = 'https://kodessphere-api.vercel.app/devices/aEb3tne';
+const API_ENDPOINT = 'https://kodessphere-api.vercel.app';
 
 function toggleBulb() {
   const currentState = document.getElementById('bulbState').innerText;
